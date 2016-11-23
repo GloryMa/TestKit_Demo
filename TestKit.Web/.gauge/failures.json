@@ -1,0 +1,7 @@
+{
+	"Flags": {},
+	"FailedItems": [
+		"Specs\\Oracle\\Monthly\\Part1\\Sp\\001\\Case_4-0_Multi-chronology1.spec:9",
+		"Specs\\Oracle\\Monthly\\Part1\\Sp\\002\\Case_5-0_Multi-chronology2.spec:9"
+	]
+}

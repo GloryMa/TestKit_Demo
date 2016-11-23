@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestKit.Web", "TestKit.Web\TestKit.Web.csproj", "{77C6EE42-61D7-4AD3-AC01-03868403C2CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriverFactory", "DriverFactory\DriverFactory.csproj", "{3A93E950-B805-43AD-980E-A94C603DF58D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77C6EE42-61D7-4AD3-AC01-03868403C2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C6EE42-61D7-4AD3-AC01-03868403C2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C6EE42-61D7-4AD3-AC01-03868403C2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C6EE42-61D7-4AD3-AC01-03868403C2CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A93E950-B805-43AD-980E-A94C603DF58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A93E950-B805-43AD-980E-A94C603DF58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A93E950-B805-43AD-980E-A94C603DF58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A93E950-B805-43AD-980E-A94C603DF58D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

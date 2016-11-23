@@ -1,0 +1,1 @@
+gauge Specs\Oracle\Monthly\Part1\Sp

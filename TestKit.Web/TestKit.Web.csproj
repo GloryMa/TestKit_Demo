@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77C6EE42-61D7-4AD3-AC01-03868403C2CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestKit.Web</RootNamespace>
+    <AssemblyName>TestKit.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentAssertions, Version=4.16.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.4.16.0\lib\net45\FluentAssertions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentAssertions.Core, Version=4.16.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.4.16.0\lib\net45\FluentAssertions.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Gauge.CSharp.Lib, Version=0.6.1.0, Culture=neutral, PublicKeyToken=3f92af01a0ea350e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Gauge.CSharp.Lib.0.6.1\lib\net45\Gauge.CSharp.Lib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Magick.NET-Q16-AnyCPU, Version=7.0.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec, processorArchitecture=MSIL">
+      <HintPath>..\packages\Magick.NET-Q16-AnyCPU.7.0.3.502\lib\net40-client\Magick.NET-Q16-AnyCPU.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Selenium.WebDriver.WaitExtensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.WaitExtensions.1.0.0\lib\Selenium.WebDriver.WaitExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.0.0\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.0.0\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Implementation\Actions\AnalyzerSpec.cs" />
+    <Compile Include="Implementation\Actions\DashboardSpec.cs" />
+    <Compile Include="Implementation\Actions\LoginSpec.cs" />
+    <Compile Include="Implementation\Actions\NotPageSpec.cs" />
+    <Compile Include="Implementation\Actions\TemplatesSpec.cs" />
+    <Compile Include="Implementation\Pages\AnalyzerPage.cs" />
+    <Compile Include="Implementation\Pages\BasePage.cs" />
+    <Compile Include="Implementation\Pages\DashboardPage.cs" />
+    <Compile Include="Implementation\Pages\LoginPage.cs" />
+    <Compile Include="Implementation\Pages\TemplatesPage.cs" />
+    <Compile Include="Implementation\Utility\InitData.cs" />
+    <Compile Include="Implementation\Utility\DriverExtensions.cs" />
+    <Compile Include="Implementation\Utility\DriverSetUp.cs" />
+    <Compile Include="Implementation\Utility\MagickUtility.cs" />
+    <Compile Include="Implementation\Utility\ScreenGrabber.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Env\default\default.properties" />
+    <None Include="manifest.json" />
+    <None Include="packages.config" />
+    <None Include="Specs\example.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_1-0_DynamicParameter.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_100-3_NoPrintHeading.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_101-3_NoPrintlogo.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_103-4_LaunchShortcut_PersonI.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_104-4_LaunchShortcut_PersonII.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_105-4_LaunchShortcut_STD.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_106-4_Layout&amp;TotalLocation1.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_107-4_Layout&amp;TotalLocation2.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_108-4_Layout&amp;TotalLocation3.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_109-4_Layout&amp;TotalLocation4.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_110-4_Layout&amp;TotalLocation5.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_111-4_Layout&amp;TotalLocation6.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_112-5_CopyPasteParameters.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_113-5_CopyPasteParameters2.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_124-7_Email.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_130-9_Expiration date.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_131-9_UsingDate.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_38-1_Calculation.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_39-1_Calculation2.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_40-1_Calculation3.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_42-1_ColorFromAttribute.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_43-1_ColorFromLaunchStatus.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_48-1_DynamicIndex.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_58-1_TotalValueType3.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_61-1_TotalValueTypeInMultiChrono3.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_62-1_TotalValueTypeInMultiChrono4.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_71-1_Weighted1.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_72-1_Weighted2.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_77-2_DynmicSelection.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_79-2_ForExport1.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_80-2_ForExport2.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_81-2_ForExport3.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_82-2_ModifyStockLevel.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_84-2_NoSelectionScreen1.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_85-2_NoSelectionScreen2.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_95-3_Display%25ofColumn.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_96-3_Display%25ofRow.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Case_98-3_ExludeBlank.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Fail\Case_28-0_Multi-chronology13.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Fail\Case_29-0_Multi-chronology14.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\MoreAction\Case_125-8_WithBothRowAndColumnTotal.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\MoreAction\Case_126-8_WithColumnTotal.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\MoreAction\Case_127-8_WithColumnTotal2.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\MoreAction\Case_128-8_WithRowTotal.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\MoreAction\Case_129-8_WithoutBothRowAndColumnTotal.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\MoreAction\Case_2-0_In-placeEdit.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\MoreAction\Case_3-0_InPlaceEditNo.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\MoreAction\Case_47-1_DisplayOptions.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\MoreAction\Case_49-1_HideByDefault.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\MoreAction\Case_54-1_RowModify.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\MoreAction\Case_75-2_CustomGroup.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\NotRun\Performance\Case_16-0_Multi-chronology7-3.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\Sp\001\Case_4-0_Multi-chronology1.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\Sp\002\Case_5-0_Multi-chronology2.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\ToRun\001\zz_restarterver.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\ToRun\001\0_login.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\ToRun\001\Case_4-0_Multi-chronology1.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\ToRun\002\0_login.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\ToRun\002\Case_5-0_Multi-chronology2.spec" />
+    <None Include="Specs\Oracle\Monthly\Part1\ToRun\002\zz_restarterver.spec" />
+    <None Include="Specs\Raima\Monthly\00_debug.spec" />
+    <None Include="Specs\Raima\Monthly\0_login.spec" />
+    <None Include="Specs\Raima\Monthly\case_1.spec" />
+    <None Include="Specs\Raima\Monthly\case_2.spec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Specs\concepts\" />
+    <Folder Include="Specs\Oracle\Weekly\" />
+    <Folder Include="Specs\Raima\Weekly\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.2.25.0.8\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.25.0.8\build\Selenium.WebDriver.ChromeDriver.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.25.0.8\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.2.25.0.8\build\Selenium.WebDriver.ChromeDriver.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
